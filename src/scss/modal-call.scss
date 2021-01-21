@@ -1,0 +1,39 @@
+.wrapper__modal-call {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+  padding: 8px 16px;
+
+  @media screen and (min-width: 520px) {
+    padding: 0 32px;
+    width: 440px;
+  }
+  z-index: 6;
+  display: none;
+  transition: all 0.3s linear;
+}
+.modal__title::before {
+  @media screen and (min-width: 520px) {
+    content: "";
+    position: absolute;
+    top: 32px;
+    width: 4px;
+    height: 40px;
+    background: url(../img/icon/highlight.svg) no-repeat;
+    transform: translateX(-32px);
+  }
+}
+.modal__title::after {
+  @media screen and (max-width: 519px) {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: url(../img/icon/highlight.svg) no-repeat;
+    transform: translate(-214px, -8px);
+  }
+}
