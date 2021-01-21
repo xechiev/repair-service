@@ -1,5 +1,9 @@
 import '../scss/style.scss';
 
+import Swiper, {Navigation, Pagination} from 'swiper';
+
+Swiper.use([Navigation, Pagination]);
+
 'use strict';
 const slider = document.querySelector('.swiper-container');
 let mySwiper;
@@ -23,14 +27,13 @@ function mobileSlider() {
         });
         slider.dataset.mobile = 'true';
     }
-    if(window.innerWidth >= 768 && window.innerWidth <= 1119) {
+    if(window.innerWidth >= 768 && mySwiper !== undefined) {
         slider.dataset.mobile = 'false';
-
-        if(slider.classList.contains('swiper-container-initialized')) {
-            mySwiper.destroy();
+        for (let i = 0; i < mySwiper.length; i++) {
+          mySwiper[i].destroy();
         }
-        
-    }
+        mySwiper = undefined;
+      }
 }
 mobileSlider();
 
