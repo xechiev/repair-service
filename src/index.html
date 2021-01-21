@@ -6,8 +6,69 @@
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="container--main">
         <div class="container">
+            <div class="container__sidebar"> 
+                <div class="sidebar">
+                    <header class="header">
+                        <nav class="header__menu header__menu--mobile">
+                            <div class="header__menu mobile-first">
+                                <button class="button-icon header__button-icon-burger" name="burger"></button>
+                                 <div class="header__logo"></div>
+                            </div>
+                            <button class="button-icon header__button-icon-search" name="search">   
+                            </button>
+                        </nav>
+                    </header>
+                    <nav class="menu">
+                        <ul class="menu__navigation-bar">
+                            <li class="menu__item"><a class="menu__link menu__link" href="#">Ремонт техники</a></li>
+                            <li class="menu__item"><a class="menu__link--active" href="#">Услуги и сервисы</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Корпоративным клиентам</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Продавцам техники</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Партнерам</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Производителям</a></li>
+                            <li class="menu__item"><a class="menu__link"href="#">Наши сервисные центры</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        </ul>
+                     </nav>
+                    <footer class="footer">
+                        <nav class="footer__button-icon">
+                            <button class="button-icon footer__button-icon--call" name="call"></button>
+                            <button class="button-icon footer__button-icon--chat" name="chat"></button>
+                            <button class="button-icon footer__button-icon--profile" name="profile"></button>
+                        </nav>
+                        <div class="contacts">
+                            <a href="mailto:mail@cps.com" class="footer__mail">mail@cps.com</a>
+                            <a href="tel:88008908900" class="footer__phone">8 800 890 8900</a>
+                        </div>
+                        <div class="languages">
+                            <button class="toggle-languages toggle-languages--active">RU</button>
+                            <button class="toggle-languages">EN</button>
+                            <button class="toggle-languages">CH</button>
+                        </div>
+                    </footer>
+                </div>
+            </div> 
+
+            <div class="container__modal-feedback">
+                <div class="container__modal-feedback modal-feedback">
+                    <button class="modal-feedback__button" type="button"></button>
+                    <h1 class="modal-feedback__title">Обратная связь</h1>
+                    <form action="mailto:khechievm08@yandex.ru" method="post" class="modal-feedback__form">
+                        <input class="form__input" type="text" placeholder="Имя">
+                        <input class="form__input" type="tel"  placeholder="Телефон">
+                        <input  class="form__input" type="email" placeholder="Электронная почта">
+                        <textarea class="form__textarea" placeholder="Сообщение"></textarea>
+                    <div class="privacy-policy">
+                        <p class="privacy-policy__text">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей
+                        <span>политикой конфиденциальности</span></p>
+                    </div>
+                    <div class="modal-feedback__button-wrapper">
+                        <button class="form__button" type="submit">Отправить</button>
+                    </div>
+                    <div class="modal-feedback__fog"></div>
+            </div>
             <div class="wrapper">
                 <header class="header">
                  <div class="header__menu">
@@ -65,7 +126,26 @@
                 </div>
                </main>
                 
-            </div>   
+            </div>
+
+            <div class="modal-call-container">
+                <div class="modal-call modal-call-position">
+                  <button class="modal-call__button"></button>
+                  <div class="modal-call__title">Заказать звонок</div>
+                  <form action="/" method="post" class="form-grope">
+          
+                    <input type="tel" class="form-grope__input" placeholder="Телефон">
+          
+                    <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей
+                      <span>политикой
+                          конфиденциальности</span></p>
+                    <div class="form-grope__button-container">
+                      <button type="submit" class="form-button">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-call-container__overlay"></div>
+              </div>
         </div>
     </div>
 
