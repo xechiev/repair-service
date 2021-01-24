@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #f8f8f8;
+  margin-bottom: 16px;
 }
 .repair-technic__title {
   min-width: 320px;
@@ -28,7 +29,7 @@
   }
 }
 .technic-slider__slide {
-  width: 240px;
+  max-width:240px;
   height: 160px;
   margin: 16px 0 16px 16px;
   position: relative;
@@ -45,11 +46,13 @@
   box-sizing: border-box;
   border-radius: 6px;
 }
+.technic-slider__wrapper:last-of-type {
+  margin-right: -8px;
+}
 .technic-slider__wrapper {
-  @media (min-width: 1120px) {
-  }
+  padding-left: 0;
   @media (min-width: 768px) {
-   max-height: 184px;
+    max-height: 184px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -59,7 +62,7 @@
   }
 }
 .technic-slider__link {
-    display: block;
+  display: block;
   font-family: "TT Lakes ";
   font-size: 16px;
   line-height: 24px;
@@ -68,7 +71,18 @@
   padding-left: 16px;
 }
 .technic-slider__logo {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.swiper-pagination__technic {
+  position: relative;
+  transform: translateY(12px);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    margin-top: 16px;
+  }
 }
