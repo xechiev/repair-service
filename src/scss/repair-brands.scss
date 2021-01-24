@@ -1,33 +1,47 @@
-.repair-brands {
+.repair-brand {
   font-family: "TT Lakes Medium";
   background-color: #f8f8f8;
-  max-width: 1120px;
+  max-width: 1440px;
   margin: 0 auto;
 }
-.repair-brands__title {
+.repair-brand__title {
   min-width: 320px;
   height: 56px;
   background-color: #fff;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-top: 1px solid #d9fff5;
 }
-.box-title::before {
-  content: "";
-  position: absolute;
-  min-width: 320px;
-  height: 1px;
-  color: #d9fff5;
-}
-.repair-brands__title {
+// .box-title::before {
+//   content: "";
+//   position: absolute;
+//   min-width: 320px;
+//   height: 1px;
+//   color: #d9fff5;
+// }
+.repair-title {
   font-size: 16px;
+  padding: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   color: #7e7e82;
-  padding: 16px 32px;
+
+  @media (min-width: 768px) {
+    padding: 16px 24px;
+  }
+  @media (min-width: 1120px) {
+    padding: 16px 32px;
+  }
 }
 .brand-slider__slide {
-  margin: 0px 0px 16px 16px;
+  margin: 0px 16px 16px 0px;
   max-width: 240px;
+  @media (min-width: 1120px) {
+    margin-right: 32px;
+  }
+  @media (min-width: 768px) {
+
+  }
 }
 .swiper-slide__button {
   background-image: url(../img/icon/go.svg);
@@ -112,7 +126,7 @@
   .brand-button {
     display: none;
   }
-  .repair-brands__title {
+  .repair-brand__title {
     padding: 16px 16px;
   }
   .brand-slider__slide {
@@ -126,7 +140,7 @@
   }
 }
 @media screen and (min-width: 767px) {
-  .swiper-wrapper {
+  .brand-slider__wrapper {
     max-height: 136px;
     padding-left: 35px;
     margin: 0;
@@ -139,6 +153,7 @@
     width: 100%;
   }
   .brand-slider__slide {
+
     max-width: 30%;
   }
   .expand {
@@ -154,6 +169,12 @@
     margin-left: 45px;
     position: relative;
     margin-top: 24px;
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1120px) {
+      margin-bottom: 50px;
+    }
   }
   .read-more::after {
     content: "Показать все";
@@ -162,7 +183,7 @@
   }
   .expand:checked ~ .read-more::after {
     content: "Скрыть";
-    background: url(../img/icon/expandUp.svg) no-repeat 0 -2px;
+    background: url(../img/icon/expandUp.svg) no-repeat 0 -1px;
   }
   .repair-brands__title {
     padding: 16px 50px;
@@ -172,15 +193,15 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1119px) {
-  .repair-brands__title {
+  .repair-brand__title {
     padding: 16px 24px;
   }
   .brand-slider__wrapper {
-    padding: 24px 12px;
+    padding-left: 24px;
   }
 }
 @media screen and (min-width: 1120px) {
   .brand-slider__slide {
-    max-width: 240px;
+    width: 240px;
   }
 }

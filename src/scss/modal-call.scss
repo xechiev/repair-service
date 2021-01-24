@@ -37,3 +37,37 @@
     transform: translate(-214px, -8px);
   }
 }
+.modal-call__button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon/closeburger.svg) no-repeat;
+}
+.modal-call__fog {
+  display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 5;
+}
+.wrapper__modal-call-active .modal-call__fog {
+  display: block;
+      background-color: rgba(255, 255, 255, 0.95);
+}
+.wrapper__modal-call-active .modal-call {
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+  display: block;
+  transition: 0.5s;
+  animation: modal_call 0.7s forwards;
+  z-index: 6;
+}
+@keyframes modal_call {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

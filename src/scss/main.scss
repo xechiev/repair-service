@@ -112,12 +112,13 @@ h6 {
 }
 .container__main {
   max-width: 1440px;
-  font-family: "TT Lakes ";
+  font-family: "TT Lakes ", sans-serif;
   height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   background: #f8f8f8;
+  position: relative;
 }
 header {
   background: #fff;
@@ -205,6 +206,7 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 .main__title-text {
   font-family: "TT Lakes Bold";
@@ -478,7 +480,7 @@ header {
       width: 40px;
       height: 40px;
       margin-left: 8px;
-      top: 48px;
+      transform: translateY(-10px);
       pointer-events: none;
 
     }
@@ -492,7 +494,7 @@ header {
       width: 40px;
       height: 40px;
       margin-left: 8px;
-      top: 48px;
+      transform: translateY(-10px);
       pointer-events: none;
     }
     .main__menu {
@@ -502,6 +504,7 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      position: relative;
     }
     .main__title {
       display: -webkit-box;
