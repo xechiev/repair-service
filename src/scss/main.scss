@@ -138,6 +138,8 @@ header {
   width: 40px;
   height: 40px;
   margin-right: 16.73px;
+  @media screen and (max-width: 768px) {
+  }
 }
 .header__contacts {
   display: none;
