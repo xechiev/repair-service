@@ -5,13 +5,6 @@ Swiper.use([Navigation, Pagination]);
 'use strict';
 
 const slider = document.querySelector('.swiper-container');
-
-// const modalcall = document.querySelectorAll('.footer__button-icon--call, .header__button-icon--call, .modal-call__button, .modal-call__fog');
-// const modalfeedback = document.querySelectorAll('.footer__button-icon--chat, .header__button-icon--chat, .modal-feedback__button, .modal-feedback__fog');
-// const burger= document.querySelector('.header__button-icon--burger');
-// const sidebar = document.querySelector('.sidebar__wrapper');
-
-
 let mySwiper;
 
 function mobileSlider() {
@@ -42,56 +35,74 @@ function mobileSlider() {
         mySwiper = undefined;
     }
 }
-
 mobileSlider();
 
 window.addEventListener('resize', function() {
     mobileSlider();
 });
 
-// function showBlock() {
-//     if (sidebar.style.display == 'block') { 
-//     sidebar.style.display = "none";
-//   }
-//   else {
-//     sidebar.style.display = "block";
-// }
- 
-// }
+const openCall = document.querySelector('.header__button-icon--call'); 
+const openCallFooter = document.querySelector('.footer__button-icon--call');  
+const closeCall = document.querySelector('.modal-call__button'); 
+const modalCall = document.querySelector('.container__modal-call'); 
+const fogCall= document.querySelector('.modal-call__fog');
 
-// burger.addEventListener('click', function () {
-//     showBlock();
-// })
-openMenu('.header__button-icon--burger', '.sidebar__wrapper');
-openMenu('.footer__button-icon--call', '.container__modal-call');
-openMenu('.footer__button-icon--chat', '.container__modal-feedback');
-openMenu('.header__button-icon--chat', '.container__modal-feedback');
-openMenu('.header__button-icon--call', '.container__modal-call');
+openCall.addEventListener('click', openModal);
+openCallFooter.addEventListener('click', openModal);
 
-closeMenu('.header__button-icon-burger', '.sidebar__wrapper');
-closeMenu('.sidebar-container__fog', '.sidebar__wrapper');
+fogCall.addEventListener('click', closeModal);
+closeCall.addEventListener('click', closeModal);
 
-closeMenu('.modal-feedback__button', '.container__modal-feedback');
-closeMenu('.modal-feedback__fog', '.container__modal-feedback');
-
-closeMenu('.modal-call__button', '.container__modal-call');
-closeMenu('.modal-call__fog', '.container__modal-call');
-
-function openMenu(selectorButton, selectorMenu) {
-  let selectorMenuActive = selectorMenu.trim() + '-active';
-  selectorMenuActive = selectorMenuActive.slice(1);
-  document.querySelector(selectorButton).addEventListener('click', function (evnt) {
-    evnt.preventDefault();
-    document.querySelector(selectorMenu).classList.add(selectorMenuActive);
-    document.querySelector('body').classList.add('body-active');
-  })
+function openModal() {
+    fogCall.classList.add('modal-call__fog--show')
+    modalCall.classList.add('container__modal-call--show')
 }
 
-function closeMenu(selectorButton, selectorMenu) {
-  let selectorMenuActive = selectorMenu.trim() + '-active';
-  selectorMenuActive = selectorMenuActive.slice(1);
-  document.querySelector(selectorButton).addEventListener('click', function (evnt) {
-    evnt.preventDefault();
-    document.querySelector(selectorMenu).classList.remove(selectorMenuActive);
-    document.querySelector('body').classList.remove('body-active');
-  })}
+function closeModal() {
+    fogCall.classList.remove('modal-call__fog--show')
+    modalCall.classList.remove('container__modal-call--show')
+}
+
+const openFeedback = document.querySelector('.header__button-icon--chat');
+const openFeedbackFooter = document.querySelector('.footer__button-icon--chat'); 
+const openFeedback1 = document.querySelector('.footer__button-icon--chat'); 
+const closeFeedback = document.querySelector('.modal-feedback__button'); 
+const modalFeedback = document.querySelector('.container__modal-feedback'); 
+const fogFeedback = document.querySelector('.modal-feedback__fog');
+
+openFeedback.addEventListener('click', openModalFeedback);
+openFeedbackFooter.addEventListener('click', openModalFeedback);
+
+fogFeedback.addEventListener('click', closeModalFeedback);
+closeFeedback.addEventListener('click', closeModalFeedback);
+
+function openModalFeedback() {
+    fogFeedback.classList.add('modal-feedback__fog--show')
+    modalFeedback.classList.add('container__modal-feedback--show')
+}
+
+function closeModalFeedback() {
+    fogFeedback.classList.remove('modal-feedback__fog--show')
+    modalFeedback.classList.remove('container__modal-feedback--show')
+}
+
+const openSidebar = document.querySelector('.header__button-icon--burger')
+const modalSidebar = document.querySelector('.sidebar')
+const closeSidebar = document.querySelector('.header__button-icon--closeburger')
+const fogSidebar = document.querySelector('.sidebar-container__fog')
+
+openSidebar.addEventListener('click', openModalSidebar);
+
+
+fogSidebar.addEventListener('click', closeModalSidebar);
+closeSidebar.addEventListener('click', closeModalSidebar);
+
+function openModalSidebar() {
+    fogSidebar.classList.add('sidebar-container__fog--show')
+    modalSidebar.classList.add('sidebar--show')
+}
+
+function closeModalSidebar() {
+    fogSidebar.classList.remove('sidebar-container__fog--show')
+    modalSidebar.classList.remove('sidebar--show')
+}
