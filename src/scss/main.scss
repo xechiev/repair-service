@@ -132,14 +132,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 .header__button-icon--burger {
   background-image: url(../img/icon/burger.svg);
   width: 40px;
   height: 40px;
   margin-right: 16.73px;
-  @media screen and (max-width: 768px) {
-  }
 }
 .header__contacts {
   display: none;
@@ -172,10 +171,11 @@ header {
 }
 .header::after {
   content: "";
-  position: absolute;
+  // position: absolute;
   width: 320px;
   height: 1px;
   background: #d9fff5;
+  z-index: 10;
   @media screen and (min-width: 1440px) {
     display: none;
   }

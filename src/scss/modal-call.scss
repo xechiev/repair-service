@@ -1,6 +1,6 @@
 .container__modal-call {
   position: fixed;
-  z-index: 8;
+  z-index: 20;
   display: none;
   top: 0;
   right: 0;
@@ -20,7 +20,7 @@
 }
 .container__modal-call--show {
   display: block;
-  z-index: 8;
+  z-index: 20;
 }
 .container__modal-call--show::before {
   content: "";
