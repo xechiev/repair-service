@@ -156,6 +156,10 @@
   right: 16px;
   bottom: 18px;
 }
+.service-button:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s linear;
+}
 .swiper-pagination__price {
   transform: translateY(-5px);
   @media (min-width: 768px) {
@@ -193,6 +197,9 @@
   color: #1b1c21;
   transition-duration: 0.3s;
   position: relative;
+}
+.detail__link:hover {
+  transform: scale(1.1, 1.1);
 }
 .detail__link::after {
   content: "";

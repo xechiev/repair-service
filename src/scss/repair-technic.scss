@@ -28,15 +28,27 @@
     padding: 16px 32px;
   }
 }
+// .swiper-slide {
+//   :hover {
+//     transform: scale(1.1, 1.1);
+//     transition: all 0.3s linear;
+//   }
+  
+// }
 .technic-slider__slide {
   max-width:240px;
   height: 160px;
   margin: 16px 0 16px 16px;
   position: relative;
+  
 
   @media (min-width: 768px) and (max-width: 1119px) {
     width: 30%;
     margin: 0px 18px 24px 0;
+    :hover {
+      transform: scale(1.1, 1.1);
+      transition: all 0.3s linear;
+    }
   }
   @media (min-width: 1120px) {
     margin: 24px 32px 0px 0px;
@@ -45,6 +57,10 @@
   border: 1px solid #eaeaea;
   box-sizing: border-box;
   border-radius: 6px;
+  :hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s linear;
+  }
 }
 .technic-slider__wrapper:last-of-type {
   margin-right: -8px;

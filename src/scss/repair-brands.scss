@@ -36,6 +36,10 @@
 .brand-slider__slide {
   margin: 0px 16px 16px 0px;
   max-width: 240px;
+  :hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s linear;
+  }
   @media (min-width: 1120px) {
     margin-right: 32px;
   }
@@ -70,6 +74,7 @@
   background: #fff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
+  
 }
 .swiper-slide__logo {
   padding: 0 16px;
