@@ -1110,7 +1110,7 @@ header {
   content: "";
   width: 4px;
   height: 30px;
-  background-image: url(/src/img/icon/highlight.svg);
+  background-image: url(img/icon/highlight.svg);
   position: absolute;
   pointer-events: none;
   margin-left: -24px;
