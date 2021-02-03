@@ -719,7 +719,7 @@ header {
 .main__title-text::before {
   content: "";
   position: absolute;
-  background-image: url(/src/img/icon/highlight.svg);
+  background-image: url(img/icon/highlight.svg);
   width: 3px;
   height: 40px;
   color: #41f6d7;
