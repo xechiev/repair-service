@@ -20,7 +20,7 @@
   font-family: "TT Lakes Medium";
   src: url(./fonts/TTLakes-Medium.eot);
   src: url(./fonts/TTLakes-Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakes-Medium.woff) format("woff"), url(./fonts/TTLakes-Medium.ttf) format("truetype");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
