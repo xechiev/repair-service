@@ -43,7 +43,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url(../img/icon/closeburger.svg) no-repeat;
+  background: url(img/icon/closeburger.svg) no-repeat;
   &:hover {
     // transform: scale(1.1, 1.1);
     transition: all 0.3s linear;
@@ -60,7 +60,7 @@
     top: 32px;
     width: 4px;
     height: 40px;
-    background: url(../img/icon/highlight.svg) no-repeat;
+    background: url(img/icon/highlight.svg) no-repeat;
     transform: translateX(-32px);
   }
 }
@@ -70,7 +70,7 @@
     position: absolute;
     width: 4px;
     height: 40px;
-    background: url(../img/icon/highlight.svg) no-repeat;
+    background: url(img/icon/highlight.svg) no-repeat;
     transform: translate(-203px, -8px);
   }
 }
@@ -119,7 +119,7 @@ span {
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  background: url(../img/icon/goside.svg) no-repeat 90%;
+  background: url(img/icon/goside.svg) no-repeat 90%;
   border-radius: 16px;
   background-color: #ff3e79;
   color: #ffffff;
@@ -154,18 +154,6 @@ span {
   background-color: rgba(255, 255, 255, 0.95);
   transition: 0.5s;
 }
-
-// .container__modal-feedback-active .modal-feedback__fog {
-//   display: block;
-//   background-color: rgba(255, 255, 255, 0.95);
-// }
-
-// .container__modal-feedback-active .wrapper__modal-feedback {
-//   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-//   display: block;
-//   transition: 0.5s;
-//   z-index: 6;
-// }
 
 @keyframes modal_feedback {
   from {

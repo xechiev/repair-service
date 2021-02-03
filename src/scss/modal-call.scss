@@ -41,7 +41,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url(../img/icon/closeburger.svg) no-repeat;
+  background: url(img/icon/closeburger.svg) no-repeat;
  
   @media (min-width: 520px) {
     transform: translate(-100px, 8px);
@@ -58,7 +58,7 @@
     top: 32px;
     width: 4px;
     height: 40px;
-    background: url(../img/icon/highlight.svg) no-repeat;
+    background: url(img/icon/highlight.svg) no-repeat;
     transform: translateX(-32px);
   }
 }
@@ -68,7 +68,7 @@
     position: absolute;
     width: 4px;
     height: 40px;
-    background: url(../img/icon/highlight.svg) no-repeat;
+    background: url(img/icon/highlight.svg) no-repeat;
     transform: translate(-214px, -8px);
   }
 }
@@ -117,7 +117,7 @@ span {
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  background: url(../img/icon/goside.svg) no-repeat 90%;
+  background: url(img/icon/goside.svg) no-repeat 90%;
   border-radius: 16px;
   background-color: #ff3e79;
   color: #ffffff;
@@ -152,18 +152,6 @@ span {
   background-color: rgba(255, 255, 255, 0.95);
   transition: 0.5s;
 }
-// .container__modal-call-active .modal-call__fog {
-//   display: block;
-//   background-color: rgba(255, 255, 255, 0.95);
-// }
-// .container__modal-call-active .wrapper__modal-call {
-//   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-//   display: block;
-//   transition: 0.5s;
-//   z-index: 6;
-//   animation: modal_call 0.7s forwards;
-// }
-
 @keyframes modal_call {
   from {
     transform: translateX(100%);

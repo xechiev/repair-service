@@ -67,18 +67,18 @@ header {
   transition: all 0.3s ease;
 }
 .header__button-icon--closeburger {
-  background-image: url(../img/icon/closeburger.svg);
+  background-image: url(img/icon/closeburger.svg);
   @media (min-width: 1440px) {
     display: none;
   }
 }
 .header__logo {
-  background-image: url(../img/icon/logo.svg);
+  background-image: url(img/icon/logo.svg);
   width: 97px;
   height: 51px;
 }
 .header__button-icon-search {
-  background-image: url(../img/icon/search.svg);
+  background-image: url(img/icon/search.svg);
 }
 .menu__navigation-bar {
   display: flex;
@@ -118,7 +118,7 @@ header {
   content: "";
   width: 4px;
   height: 30px;
-  background-image: url(/src/img/icon/highlight.svg);
+  background-image: url(img/icon/highlight.svg);
   position: absolute;
   pointer-events: none;
   margin-left: -24px;
@@ -130,13 +130,13 @@ footer {
   margin-bottom: 30px;
 }
 .footer__button-icon--call {
-  background-image: url(../img/icon/call.svg);
+  background-image: url(img/icon/call.svg);
 }
 .footer__button-icon--chat {
-  background-image: url(../img/icon/chat.svg);
+  background-image: url(img/icon/chat.svg);
 }
 .footer__button-icon--profile {
-  background-image: url(../img/icon/profile.svg);
+  background-image: url(img/icon/profile.svg);
 }
 .footer__mail {
   display: block;
