@@ -9,7 +9,12 @@
  *
  * Released on: January 21, 2021
  */
-@font-face {
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+body {
+  @font-face {
   font-family: "TT Lakes Regular";
   src: url(./fonts/TTLakes-Regular.eot);
   src: url(./fonts/TTLakes-Regular.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakes-Regular.woff) format("woff"), url(./fonts/TTLakes-Regular.ttf) format("truetype");
@@ -35,8 +40,6 @@
   font-weight: 400;
   font-style: normal;
 }
-:root {
-  --swiper-theme-color: #007aff;
 }
 .swiper-container {
   margin-left: auto;
