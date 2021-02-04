@@ -4,31 +4,36 @@
   width: 100%;
   margin: 0 auto;
   background-color: #f8f8f8;
+  font-family: "TT Lakes Medium";
 }
 .price__title {
   min-width: 320px;
-  height: 56px;
+  height: auto;
   background-color: #fff;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
   border-top: 1px solid #d9fff5;
   @media (min-width: 768px) {
-    padding: 16px 26px;
+    padding: 16px 24px;
   }
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     padding: 16px 32px;
   }
 }
 .price-slider {
-  padding: 16px 0 50px 0;
-  margin: 0 16px;
+  padding: 16px 0px 50px 0px;
   white-space: normal;
-  margin: 0 16px;
+  margin-right: 0px;
+  margin-left: 8px;
   @media (min-width: 768px) {
     margin: 0 12px;
     padding: 16px;
   }
 }
 .price-slider__wrapper {
+  color: #1B1C21;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: "TT Lakes Medium";
   padding-left: 0;
   @media (min-width: 768px) {
     display: block;
@@ -75,19 +80,13 @@
   }
 }
 .price-slider__wrapper:first-child::after {
-  content: "";
-  width: 24px;
+  @media (max-width: 320px) {
+    content: "";
+  width: 25px;
   height: 200px;
   position: absolute;
-  top: 16px;
-  left: 290px;
-  background-image: linear-gradient(
-    270deg,
-    #f8f8f8 16.84%,
-    rgba(248, 248, 248, 0.0001) 100%
-  );
-  @media (min-width: 768px) {
-    display: none;
+  left: 288px;
+  background-image: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   }
 }
 .service-title {
@@ -105,7 +104,7 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  
   margin-bottom: 16px;
   @media (min-width: 768px) {
     padding: 0;
@@ -134,7 +133,10 @@
 .price-slider__slide--upper {
   margin-top: -65px;
   position: absolute;
-  color: #1b1c21;
+  font-family: "TT Lakes Medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: #7e7e82;
 
   @media (max-width: 767px) {
     display: none;
@@ -179,15 +181,15 @@
   }
 }
 .detail__paragraph {
-  font-family: "TTLakes ", sans-serif;
-  font-size: 14px;
   line-height: 20px;
+  font-size: 14px;
+  font-family: "TT Lakes Medium";
   letter-spacing: 0.2px;
   color: #1b1c21;
 }
 .detail__link {
   display: inline-block;
-  font-family: "TT Lakes ";
+  font-family: "TT Lakes Medium";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -197,9 +199,9 @@
   color: #1b1c21;
   transition-duration: 0.3s;
   position: relative;
-}
-.detail__link:hover {
-  transform: scale(1.1, 1.1);
+  &:hover {
+    color: tomato;
+  }
 }
 .detail__link::after {
   content: "";

@@ -3,10 +3,11 @@
   background-color: #f8f8f8;
   max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 }
 .repair-brand__title {
   min-width: 320px;
-  height: 56px;
+  height: auto;
   background-color: #fff;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
   border-top: 1px solid #d9fff5;
@@ -28,17 +29,29 @@
   }
 }
 .brand-slider__slide {
-  margin: 0px 16px 16px 0px;
-  max-width: 240px;
   :hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s linear;
   }
-  @media (min-width: 1120px) {
-    margin-right: 32px;
+  @media (max-width: 767px) {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 240px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) and (max-width: 1119px) {
+    margin-right: 18px;
+    margin-bottom: 16px;
+    max-width: 30%;
+  }
 
+  @media (min-width: 1120px) {
+    margin-right: 30px;
+    margin-bottom: 16px;
+    width: 240px;
+  }
+  @media (min-width: 1366px) and (max-width: 1408px) {
+    margin: 0px 16px 16px 0px;
+    max-width: 240px;
   }
 }
 .swiper-slide__button {
@@ -49,20 +62,35 @@
   margin-right: 16px;
 }
 .brand-slider__wrapper {
-  padding: 24px 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 12px;
   display: flex;
+  @media (min-width: 1120px) {
+    padding-left: 32px;
+  }
+  @media (min-width: 1336px) and (max-width: 1408px) {
+    padding-left: 20px;
+  }
+
+}
+.brand-slider__wrapper::after {
+  @media (max-width: 320px) {
+    content: "";
+    width: 24px;
+    height: 81px;
+    top: 15px;
+    position: absolute;
+    left: 296px;
+    background-image: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+  }
 }
 .swiper-slide__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 72px;
   background: #fff;
@@ -77,7 +105,6 @@
   width: 12px;
   height: 12px;
   background-color: #dddddd;
-  
 }
 .brand-button {
   margin-left: 63px;
@@ -87,37 +114,7 @@
   -ms-transform: translate(-30px, -5px);
   transform: translate(-30px, -5px);
 }
-@media screen and (max-width: 320px) {
-  .swiper-slide__button::after {
-    content: "";
-    position: absolute;
-    right: -70px;
-    top: -10px;
-    width: 24px;
-    height: 81px;
-    background: -o-linear-gradient(
-        right,
-        #f8f8f8 20%,
-        rgba(248, 248, 248, 0.0001) 100%
-      )
-      no-repeat;
-    background: -webkit-gradient(
-        linear,
-        right top,
-        left top,
-        color-stop(20%, #f8f8f8),
-        to(rgba(248, 248, 248, 0.0001))
-      )
-      no-repeat;
-    background: linear-gradient(
-        270deg,
-        #f8f8f8 20%,
-        rgba(248, 248, 248, 0.0001) 100%
-      )
-      no-repeat;
-    z-index: 2;
-  }
-}
+
 @media screen and (max-width: 767px) {
   .brand-slider__slide {
     margin: 0px 0px 16px 16px;
@@ -142,19 +139,13 @@
 @media screen and (min-width: 767px) {
   .brand-slider__wrapper {
     max-height: 136px;
-    padding-left: 35px;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
+   
+    
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
-  }
-  .brand-slider__slide {
-
-    max-width: 30%;
   }
   .expand {
     opacity: 0;
@@ -178,11 +169,19 @@
   }
   .read-more::after {
     content: "Показать все";
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
     padding-left: 26px;
     background: url(../img/icon/expand.svg) no-repeat 0 -2px;
   }
   .expand:checked ~ .read-more::after {
     content: "Скрыть";
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
     background: url(../img/icon/expandUp.svg) no-repeat 0 -1px;
   }
   .repair-brands__title {
@@ -198,10 +197,5 @@
   }
   .brand-slider__wrapper {
     padding-left: 24px;
-  }
-}
-@media screen and (min-width: 1120px) {
-  .brand-slider__slide {
-    width: 240px;
   }
 }

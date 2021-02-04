@@ -35,6 +35,9 @@
   padding-top: 24px;
   height: 99vh;
   background-color: #fff;
+  @media screen and (min-width: 520px) {
+    margin-top: -40px;
+  }
 }
 .modal-call__button {
   display: inline-block;
@@ -42,11 +45,16 @@
   width: 40px;
   height: 40px;
   background: url(../img/icon/closeburger.svg) no-repeat;
- 
+  
   @media (min-width: 520px) {
-    transform: translate(-100px, 8px);
-
+    position: relative;
+    top: 48px;
+    left: -100px;
   }
+}
+.modal-call__button:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease;
 }
 .modal__title::before {
   @media screen and (min-width: 520px) {

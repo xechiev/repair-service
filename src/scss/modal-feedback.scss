@@ -6,8 +6,7 @@
   right: 0;
   height: 100vh;
   background: #ffffff;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
   padding: 8px 16px;
 
   transition: all 0.3s linear;
@@ -37,6 +36,9 @@
   padding-top: 24px;
   height: 99vh;
   background-color: #fff;
+  @media screen and (min-width: 520px) {
+    margin-top: -40px;
+  }
 }
 .modal-feedback__button {
   display: inline-block;
@@ -50,8 +52,14 @@
   }
 
   @media screen and (min-width: 520px) {
-    transform: translate(-100px, 8px);
+    position: relative;
+    top: 48px;
+    left: -100px;
   }
+}
+.modal-feedback__button:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s ease;
 }
 .modal__title::before {
   @media screen and (min-width: 520px) {
@@ -79,13 +87,11 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
-  margin-top: 80px;
 
   @media (min-width: 520px) {
     margin-top: 16px;
   }
 }
-
 .form__input,
 .form__textarea {
   display: block;

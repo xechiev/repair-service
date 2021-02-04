@@ -1,12 +1,13 @@
 .sidebar {
   font-family: "TT Lakes Medium";
-  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   @media (max-width: 1365px) {
     display: none;
-    z-index: 10;
+    z-index: 100;
     width: 320px;
     height: 100vh;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -69,7 +70,7 @@ header {
 }
 .header__button-icon--closeburger {
   background-image: url(../img/icon/closeburger.svg);
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     display: none;
   }
 }
@@ -190,7 +191,7 @@ footer {
   height: 100vh;
   display: block;
   pointer-events: all;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(255, 255, 255, 0.95);
   transition: 0.5s;
 }

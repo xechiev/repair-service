@@ -12,10 +12,8 @@ function mobileSlider() {
 
    if (window.innerWidth < 768 && slider.dataset.mobile === 'false' && mySwiper === undefined) {
         mySwiper = new Swiper('.swiper-container', {
-            width: 240,
             slidesPerView: 'auto',
             slideToClickedSlide: true,
-            centeredSlides: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

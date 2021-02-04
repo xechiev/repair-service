@@ -7,13 +7,13 @@
 }
 .repair-technic__title {
   min-width: 320px;
-  height: 56px;
+  height: auto;
   background-color: #fff;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
   border-top: 1px solid #d9fff5;
 }
 .repair-title {
-  font-family: "TT Lakes ";
+  font-family: "TT Lakes Regular";
   font-size: 16px;
   padding: 16px;
   line-height: 24px;
@@ -30,37 +30,41 @@
 }
 
 .technic-slider__slide {
-  max-width:240px;
   height: 160px;
-  margin: 16px 0 16px 16px;
   position: relative;
-  
+  :hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s linear;
+  }
+  @media (max-width: 768px) {
+    max-width: 240px;
+    margin: 16px 0 16px 16px;
+  }
 
   @media (min-width: 768px) and (max-width: 1119px) {
-    width: 30%;
+    max-width: 30%;
     margin: 0px 18px 24px 0;
-    :hover {
-      transform: scale(1.1, 1.1);
-      transition: all 0.3s linear;
-    }
+    
   }
   @media (min-width: 1120px) {
     margin: 24px 32px 0px 0px;
+    max-width: 240px;
+  }
+  @media (min-width: 1366px) and (max-width: 1408px) {
+    margin: 16px 16px 0px 0px;
+    max-width: 240px;
   }
   background: #ffffff;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
   border-radius: 6px;
-  :hover {
-    transform: scale(1.1, 1.1);
-    transition: all 0.3s linear;
-  }
 }
 .technic-slider__wrapper:last-of-type {
   margin-right: -8px;
 }
 .technic-slider__wrapper {
   padding-left: 0;
+
   @media (min-width: 768px) {
     max-height: 184px;
     display: flex;
@@ -70,10 +74,32 @@
     padding-left: 24px;
     margin-top: 24px;
   }
+  @media (min-width: 1120px) {
+    padding-left: 32px;
+  }
+  @media (min-width: 1336px) and (max-width: 1408px) {
+    padding-left: 20px;
+  }
 }
+.technic-slider__wrapper::after {
+  @media (max-width: 320px) {
+    content: "";
+    width: 24px;
+    height: 160px;
+    top: 15px;
+    position: absolute;
+    left: 296px;
+    background-image: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+  }
+}
+
 .technic-slider__link {
   display: block;
-  font-family: "TT Lakes ";
+  font-family: "TT Lakes Medium";
   font-size: 16px;
   line-height: 24px;
   color: #1b1c21;

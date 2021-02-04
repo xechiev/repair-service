@@ -6,12 +6,12 @@
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <div class="container__basic">
-        <div class="container">
+    <div class="container">
+        <div class="container__basic">
             <div class="container__sidebar"> 
                 <div class="sidebar">
                     <header class="header">
-                        <nav class="header__menu--mobile">
+                        <nav class="header__menu header__menu--mobile">
                             <div class="header__menu mobile-first">
                                 <button class="button-icon header__button-icon--closeburger" name="burger"></button>
                                  <div class="header__logo"></div>
@@ -51,42 +51,6 @@
                 </div>
                 <div class="sidebar-container__fog"></div>
             </div> 
-            <div class="container__modal-feedback">
-                <div class="wrapper__modal-feedback modal-feedback">
-                    <button class="modal-feedback__button" type="button"></button>
-                    <h1 class="modal__title">Обратная связь</h1>
-                    <form action="mailto:khechievm08@yandex.ru" method="post" class="modal__form">
-                        <input class="form__input" type="text" placeholder="Имя">
-                        <input class="form__input" type="tel"  placeholder="Телефон">
-                        <input  class="form__input" type="email" placeholder="Электронная почта">
-                        <textarea class="form__textarea" placeholder="Сообщение"></textarea>
-                    <div class="privacy-policy">
-                        <p class="privacy-policy__text">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей
-                        <span>политикой конфиденциальности</span></p>
-                    </div>
-                    <div class="modal-form__button-wrapper">
-                        <button class="form__button" type="submit">Отправить</button>
-                    </div>
-                    </form>
-                    <div class="modal-feedback__fog"></div>
-            </div>
-  
-            </div>
-            <div class="container__modal-call">
-                <div class="wrapper__modal-call modal-call" >
-                    <button class="modal-call__button" type="button"></button>
-                    <h1 class="modal__title">Заказать звонок</h1>
-                    <form action="mailto:khechievm08@yandex.ru" method="post" class="modal__form">
-                        <input class="form__input" type="tel"  placeholder="Телефон">
-                        <p class="privacy-policy__text" >Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей<span> политикой конфиденциальности</span></p>
-
-                        <div class="modal-form__button-wrapper">
-                            <button class="form__button" type="submit">Отправить</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-call__fog"></div>
-            </div>
             <div class="container__main">
             <header class="header">
              <div class="header__menu">
@@ -367,7 +331,43 @@
               Информация, размещенная на данной странице, не является публичной офертой
             </div>
           </footer>
-          </div> 
+            </div> 
+            <div class="container__modal-feedback">
+            <div class="wrapper__modal-feedback modal-feedback">
+                <button class="modal-feedback__button" type="button"></button>
+                <h2 class="modal__title">Обратная связь</h2>
+                <form action="mailto:khechievm08@yandex.ru" method="post" class="modal__form">
+                    <input class="form__input" type="text" placeholder="Имя">
+                    <input class="form__input" type="tel"  placeholder="Телефон">
+                    <input  class="form__input" type="email" placeholder="Электронная почта">
+                    <textarea class="form__textarea" placeholder="Сообщение"></textarea>
+                <div class="privacy-policy">
+                    <p class="privacy-policy__text">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей
+                    <span>политикой конфиденциальности</span></p>
+                </div>
+                <div class="modal-form__button-wrapper">
+                    <button class="form__button" type="submit">Отправить</button>
+                </div>
+                </form>
+                <div class="modal-feedback__fog"></div>
+        </div>
+
+            </div>
+            <div class="container__modal-call">
+            <div class="wrapper__modal-call modal-call" >
+                <button class="modal-call__button" type="button"></button>
+                <h2 class="modal__title">Заказать звонок</h2>
+                <form action="mailto:khechievm08@yandex.ru" method="post" class="modal__form">
+                    <input class="form__input" type="tel"  placeholder="Телефон">
+                    <p class="privacy-policy__text" >Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей<span> политикой конфиденциальности</span></p>
+
+                    <div class="modal-form__button-wrapper">
+                        <button class="form__button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-call__fog"></div>
+            </div>
         </div>
     </div>
 </body>
