@@ -11,6 +11,7 @@
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
   border-top: 1px solid #d9fff5;
 }
+
 .repair-title {
   font-size: 16px;
   padding: 16px;
@@ -41,7 +42,7 @@
   }
 }
 .swiper-slide__button {
-  background-image: url(img/icon/go.svg);
+  background-image: url(../img/icon/go.svg);
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -178,11 +179,11 @@
   .read-more::after {
     content: "Показать все";
     padding-left: 26px;
-    background: url(img/icon/expand.svg) no-repeat 0 -2px;
+    background: url(../img/icon/expand.svg) no-repeat 0 -2px;
   }
   .expand:checked ~ .read-more::after {
     content: "Скрыть";
-    background: url(img/icon/expandUp.svg) no-repeat 0 -1px;
+    background: url(../img/icon/expandUp.svg) no-repeat 0 -1px;
   }
   .repair-brands__title {
     padding: 16px 50px;

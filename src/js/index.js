@@ -106,3 +106,8 @@ function closeModalSidebar() {
     fogSidebar.classList.remove('sidebar-container__fog--show')
     modalSidebar.classList.remove('sidebar--show')
 }
+
+// const section = document.querySelector('.section__paragraph-more');
+// const btnSectionParagraph = document.querySelector('.section__read-more-active');
+
+// btnSectionParagraph.addEventListener('click', openSectionParagraph);

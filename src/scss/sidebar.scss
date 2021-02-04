@@ -1,5 +1,7 @@
 .sidebar {
-  @media (max-width: 1439px) {
+  font-family: "TT Lakes Medium";
+  font-weight: 500;
+  @media (max-width: 1365px) {
     display: none;
     z-index: 10;
     width: 320px;
@@ -9,14 +11,13 @@
     top: 0;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     transition: all 0.3s ease;
-    font-family: "TT Lakes Medium";
+
     background: #fff;
   }
   @media (min-width: 360px) {
     width: 360px;
   }
-
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     display: flex;
     width: 320px;
     height: 100vh;
@@ -67,18 +68,18 @@ header {
   transition: all 0.3s ease;
 }
 .header__button-icon--closeburger {
-  background-image: url(img/icon/closeburger.svg);
+  background-image: url(../img/icon/closeburger.svg);
   @media (min-width: 1440px) {
     display: none;
   }
 }
 .header__logo {
-  background-image: url(img/icon/logo.svg);
+  background-image: url(../img/icon/logo.svg);
   width: 97px;
   height: 51px;
 }
 .header__button-icon-search {
-  background-image: url(img/icon/search.svg);
+  background-image: url(../img/icon/search.svg);
 }
 .menu__navigation-bar {
   display: flex;
@@ -118,7 +119,7 @@ header {
   content: "";
   width: 4px;
   height: 30px;
-  background-image: url(img/icon/highlight.svg);
+  background-image: url(../img/icon/highlight.svg);
   position: absolute;
   pointer-events: none;
   margin-left: -24px;
@@ -130,13 +131,13 @@ footer {
   margin-bottom: 30px;
 }
 .footer__button-icon--call {
-  background-image: url(img/icon/call.svg);
+  background-image: url(../img/icon/call.svg);
 }
 .footer__button-icon--chat {
-  background-image: url(img/icon/chat.svg);
+  background-image: url(../img/icon/chat.svg);
 }
 .footer__button-icon--profile {
-  background-image: url(img/icon/profile.svg);
+  background-image: url(../img/icon/profile.svg);
 }
 .footer__mail {
   display: block;
