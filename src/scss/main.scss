@@ -212,7 +212,7 @@ header {
 .expand-paragraph:checked ~ .section__paragraph {
   max-height: none;
 }
-.read-more__paragraph {
+.more-paragraph {
   display: inline-block;
   margin-left: 8x;
   position: relative;
@@ -224,7 +224,7 @@ header {
     margin-left: 36px;
   }
 }
-.read-more__paragraph::after {
+.more-paragraph::after {
   content: "Читать далее";
   font-family: "TT Lakes Medium";
   font-size: 16px;
@@ -233,7 +233,7 @@ header {
   padding-left: 26px;
   background: url(../img/icon/expand.svg) no-repeat 0 -2px;
 }
-.expand-paragraph:checked ~ .read-more__paragraph::after {
+.expand-paragraph:checked ~ .more-paragraph::after {
   content: "Скрыть";
   font-family: "TT Lakes Medium";
   font-size: 16px;

@@ -44,6 +44,10 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 10px;
+  @media (min-width: 768px) and (max-width: 1120px){
+    margin-right: 0;
+
+  }
   @media (max-width: 360px) {
     padding: 0px;
   }
@@ -53,6 +57,9 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @media (min-width: 768px) and (max-width: 1120px){
+    margin: 0;
+  }
 }
 .button-icon {
   border: 0;
@@ -62,6 +69,11 @@ header {
   height: 40px;
   margin-right: 16px;
 }
+.button-icon {
+  @media (min-width: 768px) and (max-width: 1120px){
+   margin-right: 24px;
+  }
+}
 .button-icon:hover {
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
@@ -70,6 +82,7 @@ header {
 }
 .header__button-icon--closeburger {
   background-image: url(../img/icon/closeburger.svg);
+  
   @media (min-width: 1366px) {
     display: none;
   }
@@ -174,7 +187,7 @@ footer {
 .toggle-languages--active {
   color: #7e7e82;
 }
-.sidebar-container__fog {
+.sidebar-fog {
   display: none;
   z-index: 25;
   position: fixed;
@@ -184,7 +197,7 @@ footer {
   height: 100vh;
   pointer-events: none;
 }
-.sidebar-container__fog--show {
+.sidebar-fog--show {
   top: 0;
   left: 0;
   width: 100vw;

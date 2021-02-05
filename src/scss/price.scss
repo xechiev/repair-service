@@ -180,14 +180,14 @@
     padding: 0 16px;
   }
 }
-.detail__paragraph {
+.detail-paragraph {
   line-height: 20px;
   font-size: 14px;
   font-family: "TT Lakes Medium";
   letter-spacing: 0.2px;
   color: #1b1c21;
 }
-.detail__link {
+.detail-link {
   display: inline-block;
   font-family: "TT Lakes Medium";
   font-weight: 700;
@@ -203,7 +203,7 @@
     color: tomato;
   }
 }
-.detail__link::after {
+.detail-link::after {
   content: "";
   position: absolute;
   width: 12px;

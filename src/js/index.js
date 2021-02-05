@@ -43,7 +43,7 @@ const openCall = document.querySelector('.header__button-icon--call');
 const openCallFooter = document.querySelector('.footer__button-icon--call');  
 const closeCall = document.querySelector('.modal-call__button'); 
 const modalCall = document.querySelector('.container__modal-call'); 
-const fogCall= document.querySelector('.modal-call__fog');
+const fogCall= document.querySelector('.call-fog');
 
 openCall.addEventListener('click', openModal);
 openCallFooter.addEventListener('click', openModal);
@@ -52,12 +52,12 @@ fogCall.addEventListener('click', closeModal);
 closeCall.addEventListener('click', closeModal);
 
 function openModal() {
-    fogCall.classList.add('modal-call__fog--show')
+    fogCall.classList.add('call-fog--show')
     modalCall.classList.add('container__modal-call--show')
 }
 
 function closeModal() {
-    fogCall.classList.remove('modal-call__fog--show')
+    fogCall.classList.remove('call-fog--show')
     modalCall.classList.remove('container__modal-call--show')
 }
 
@@ -87,7 +87,7 @@ function closeModalFeedback() {
 const openSidebar = document.querySelector('.header__button-icon--burger')
 const modalSidebar = document.querySelector('.sidebar')
 const closeSidebar = document.querySelector('.header__button-icon--closeburger')
-const fogSidebar = document.querySelector('.sidebar-container__fog')
+const fogSidebar = document.querySelector('.sidebar-fog')
 
 openSidebar.addEventListener('click', openModalSidebar);
 
@@ -96,16 +96,11 @@ fogSidebar.addEventListener('click', closeModalSidebar);
 closeSidebar.addEventListener('click', closeModalSidebar);
 
 function openModalSidebar() {
-    fogSidebar.classList.add('sidebar-container__fog--show')
+    fogSidebar.classList.add('sidebar-fog--show')
     modalSidebar.classList.add('sidebar--show')
 }
 
 function closeModalSidebar() {
-    fogSidebar.classList.remove('sidebar-container__fog--show')
+    fogSidebar.classList.remove('sidebar-fog--show')
     modalSidebar.classList.remove('sidebar--show')
 }
-
-// const section = document.querySelector('.section__paragraph-more');
-// const btnSectionParagraph = document.querySelector('.section__read-more-active');
-
-// btnSectionParagraph.addEventListener('click', openSectionParagraph);
