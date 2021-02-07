@@ -1986,7 +1986,10 @@ span {
 
 .service-button:hover {
   transform: scale(1.1, 1.1);
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear; 
+  background-color: #fff;
+  color: #ff3e79;
+}
 
 .swiper-pagination__price {
   transform: translateY(-5px); }
