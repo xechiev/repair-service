@@ -566,7 +566,8 @@ aside {
 
 html {
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: visible;
+  background-color: #f8f8f8;
 }
 
 html,
