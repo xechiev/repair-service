@@ -652,6 +652,7 @@ h6 {
   max-width: 1440px;
   font-family: "TT Lakes ", sans-serif;
   height: 100vh;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background: #f8f8f8;
