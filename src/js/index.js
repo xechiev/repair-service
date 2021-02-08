@@ -63,7 +63,6 @@ function closeModal() {
 
 const openFeedback = document.querySelector('.header__button-icon--chat');
 const openFeedbackFooter = document.querySelector('.footer__button-icon--chat'); 
-const openFeedback1 = document.querySelector('.footer__button-icon--chat'); 
 const closeFeedback = document.querySelector('.modal-feedback__button'); 
 const modalFeedback = document.querySelector('.container__modal-feedback'); 
 const fogFeedback = document.querySelector('.modal-feedback__fog');

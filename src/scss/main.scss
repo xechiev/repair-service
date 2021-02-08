@@ -1,17 +1,18 @@
+
 .container {
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
+  
 }
 .container__basic {
-  display: flex;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 .container__main {
   max-width: 1440px;
   font-family: "TT Lakes ", sans-serif;
-  height: 100vh;
-  overflow-x: hidden;
+  height: 100vh;  
   margin: 0;
   padding: 0;
   background: #f8f8f8;
@@ -202,11 +203,11 @@ header {
 .section__paragraph {
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     max-height: 97px;
   }
   @media (min-width: 768px) {
-    max-height: 142px;
+    max-height: 160px;
   }
 }
 .expand-paragraph:checked ~ .section__paragraph {
@@ -217,6 +218,7 @@ header {
   margin-left: 8x;
   position: relative;
   margin-top: 24px;
+  cursor: pointer;
   @media (min-width: 768px) {
     margin-left: 24px;
   }
@@ -224,6 +226,10 @@ header {
     margin-left: 36px;
   }
 }
+.more-paragraph:hover {
+  color: #ff3e79;
+}
+
 .more-paragraph::after {
   content: "Читать далее";
   font-family: "TT Lakes Medium";
@@ -232,6 +238,7 @@ header {
   color: #1b1c21;
   padding-left: 26px;
   background: url(../img/icon/expand.svg) no-repeat 0 -2px;
+
 }
 .expand-paragraph:checked ~ .more-paragraph::after {
   content: "Скрыть";
@@ -392,6 +399,9 @@ header {
   }
   .main__menu-title--repair {
     margin-right: 80px;
+      &:hover {
+        color: #ff3e79;
+      }
   }
   .main__menu-title--repair::after {
     content: "";
@@ -405,6 +415,9 @@ header {
   }
   .main__menu-title--checkstatus {
     margin-right: 81px;
+    &:hover {
+      color: #ff3e79;
+    }
   }
   .main__menu-title--checkstatus::after {
     content: "";
