@@ -1044,7 +1044,6 @@ header {
       width: 320px;
       height: 100vh;
       position: fixed;
-      left: 0;
       top: 0;
       flex-direction: column;
       background: #fff; } }
