@@ -846,7 +846,9 @@ header {
   line-height: 24px;
   color: #1b1c21;
   padding-left: 26px;
-  background: url(./static/expand.svg) no-repeat 0 -2px; }
+  background: url(./static/expand.svg) no-repeat 0 -2px; 
+  cursor: pointer;
+}
 
 .expand-paragraph:checked ~ .more-paragraph::after {
   content: "Скрыть";
@@ -1685,6 +1687,7 @@ span {
     max-height: none; }
   .read-more {
     display: inline-block;
+    cursor: pointer;
     margin-left: 45px;
     position: relative;
     margin-top: 24px; } }
