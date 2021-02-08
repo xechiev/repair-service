@@ -1759,8 +1759,7 @@ span {
   box-sizing: border-box;
   border-radius: 6px; }
   .technic-slider__slide :hover {
-    transform: scale(1.1, 1.1);
-    transition: all 0.3s linear; }
+    box-shadow: inset 0 0 0 3px #FF3E79; }
   @media (max-width: 768px) {
     .technic-slider__slide {
       max-width: 240px;
