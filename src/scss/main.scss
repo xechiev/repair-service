@@ -51,7 +51,6 @@ aside {
   display: block;
 }
 html {
-  overflow-y: visible;
   background-color: #f8f8f8;
 }
 html,
@@ -107,7 +106,6 @@ h6 {
   height: 100vh;
 }
 .container {
-  display: flex;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -119,7 +117,6 @@ h6 {
   padding: 0;
   background: #f8f8f8;
   position: relative;
-  overflow-x: hidden;
 }
 header {
   background: #fff;
