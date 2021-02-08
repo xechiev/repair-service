@@ -1,26 +1,29 @@
 .sidebar {
-  @media (max-width: 1439px) {
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  line-height: 24px;
+  @media (max-width: 1365px) {
     display: none;
-    z-index: 10;
+    z-index: 100;
     width: 320px;
     height: 100vh;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     transition: all 0.3s ease;
-    font-family: "TT Lakes Medium";
+
     background: #fff;
   }
   @media (min-width: 360px) {
     width: 360px;
   }
-
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     display: flex;
     width: 320px;
     height: 100vh;
     position: fixed;
+    top: 0;
     flex-direction: column;
     background: #fff;
   }
@@ -42,6 +45,10 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 10px;
+  @media (min-width: 768px) and (max-width: 1120px){
+    margin-right: 0;
+
+  }
   @media (max-width: 360px) {
     padding: 0px;
   }
@@ -51,6 +58,9 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @media (min-width: 768px) and (max-width: 1120px){
+    margin: 0;
+  }
 }
 .button-icon {
   border: 0;
@@ -60,6 +70,11 @@ header {
   height: 40px;
   margin-right: 16px;
 }
+.button-icon {
+  @media (min-width: 768px) and (max-width: 1120px){
+   margin-right: 24px;
+  }
+}
 .button-icon:hover {
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
@@ -68,7 +83,8 @@ header {
 }
 .header__button-icon--closeburger {
   background-image: url(../img/icon/closeburger.svg);
-  @media (min-width: 1440px) {
+  
+  @media (min-width: 1366px) {
     display: none;
   }
 }
@@ -103,12 +119,12 @@ header {
   color: #1b1c21;
 }
 .menu__link:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
   font-size: 18px;
   color: tomato;
   transition: all 0.3s linear;
+ 
+ 
 }
 .menu__link--active {
   pointer-events: none;
@@ -118,7 +134,7 @@ header {
   content: "";
   width: 4px;
   height: 30px;
-  background-image: url(/src/img/icon/highlight.svg);
+  background-image: url(../img/icon/highlight.svg);
   position: absolute;
   pointer-events: none;
   margin-left: -24px;
@@ -172,7 +188,7 @@ footer {
 .toggle-languages--active {
   color: #7e7e82;
 }
-.sidebar-container__fog {
+.sidebar-fog {
   display: none;
   z-index: 25;
   position: fixed;
@@ -182,14 +198,14 @@ footer {
   height: 100vh;
   pointer-events: none;
 }
-.sidebar-container__fog--show {
+.sidebar-fog--show {
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   display: block;
   pointer-events: all;
-  z-index: 1;
+  z-index: 10;
   background-color: rgba(255, 255, 255, 0.95);
   transition: 0.5s;
 }
