@@ -40,7 +40,7 @@ window.addEventListener('resize', function() {
 });
 
 const openCall = document.querySelector('.header__button-icon--call'); 
-const openCallFooter = document.querySelector('.footer__button-icon--call');  
+const openCallFooter = document.querySelector('.button-icon--call');  
 const closeCall = document.querySelector('.modal-call__button'); 
 const modalCall = document.querySelector('.container__modal-call'); 
 const fogCall= document.querySelector('.call-fog');
@@ -62,7 +62,7 @@ function closeModal() {
 }
 
 const openFeedback = document.querySelector('.header__button-icon--chat');
-const openFeedbackFooter = document.querySelector('.footer__button-icon--chat'); 
+const openFeedbackFooter = document.querySelector('.button-icon--chat'); 
 const closeFeedback = document.querySelector('.modal-feedback__button'); 
 const modalFeedback = document.querySelector('.container__modal-feedback'); 
 const fogFeedback = document.querySelector('.modal-feedback__fog');
@@ -85,7 +85,7 @@ function closeModalFeedback() {
 
 const openSidebar = document.querySelector('.header__button-icon--burger')
 const modalSidebar = document.querySelector('.sidebar')
-const closeSidebar = document.querySelector('.header__button-icon--closeburger')
+const closeSidebar = document.querySelector('.button-icon--closeburger')
 const fogSidebar = document.querySelector('.sidebar-fog')
 
 openSidebar.addEventListener('click', openModalSidebar);

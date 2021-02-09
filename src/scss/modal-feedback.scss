@@ -6,9 +6,9 @@
   right: 0;
   height: 100vh;
   background: #ffffff;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
   padding: 8px 16px;
-
   transition: all 0.3s linear;
 
   @media screen and (min-width: 520px) {
@@ -79,25 +79,28 @@
     width: 4px;
     height: 40px;
     background: url(../img/icon/highlight.svg) no-repeat;
-    transform: translate(-203px, -8px);
+    transform: translate(-203px, -5px);
   }
 }
 .modal-feedback__title {
-  font-family: "TT Lakes Bold";
+  font-family: "TT Lakes";
   font-size: 24px;
-  font-weight: bold;
+  line-height: 32px;
+  font-weight: 700;
+  color: #1b1c21;
   margin-bottom: 40px;
   margin-top: 80px;
 
   @media (min-width: 520px) {
-    margin-top: 16px;
+    margin-top: 8px;
   }
 }
 .form-grope__input,
 .form-grope__textarea {
   display: block;
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 16px;
+  line-height: 24px;
   width: 100%;
   padding: 12px 16px;
   background: #ffffff;
@@ -112,7 +115,7 @@
 }
 .privacy-policy__text,
 span {
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 14px;
   line-height: 16px;
   color: #7e7e82;
@@ -121,10 +124,10 @@ span {
   color: #ff3e79;
 }
 .form-grope__button {
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 12px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   background: url(../img/icon/goside.svg) no-repeat 90%;
   border-radius: 16px;

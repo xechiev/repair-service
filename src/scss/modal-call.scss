@@ -78,22 +78,25 @@
   }
 }
 .modal-call__title {
-  font-family: "TT Lakes Bold";
+  font-family: "TT Lakes";
   font-size: 24px;
-  font-weight: bold;
+  line-height: 32px;
+  font-weight: 700;
+  color: #1b1c21;
   margin-bottom: 40px;
   margin-top: 80px;
 
   @media (min-width: 520px) {
-    margin-top: 16px;
+    margin-top: 8px;
   }
  
 }
 .form-grope__input,
 .form-grope__textarea {
   display: block;
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 16px;
+  line-height: 24px;
   width: 100%;
   padding: 12px 16px;
   background: #ffffff;
@@ -104,7 +107,7 @@
 }
 .form-grope__text,
 span {
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 14px;
   line-height: 16px;
   color: #7e7e82;
@@ -113,10 +116,10 @@ span {
   color: #ff3e79;
 }
 .form-grope__button {
-  font-family: "TTLakes", sans-serif;
+  font-family: 'TT Lakes';
   font-size: 12px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   background: url(../img/icon/goside.svg) no-repeat 90%;
   border-radius: 16px;

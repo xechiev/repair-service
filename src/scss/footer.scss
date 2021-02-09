@@ -1,6 +1,6 @@
 .bottom__information {
   margin: 0 auto;
-  font-family: "TT Lakes Medium";
+  font-family: "TT Lakes";
 }
 .bottom {
   max-width: 1440px;
@@ -10,6 +10,7 @@
   align-items: start;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
   background-color: #f8f8f8;
   color: #7e7e82;
   padding: 40px 16px 15px;
@@ -54,7 +55,7 @@
 }
 .bottom__offer-public {
   text-align: right;
-  
+
   @media (max-width: 767px) {
     width: 100%;
     text-align: center;

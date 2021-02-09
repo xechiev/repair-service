@@ -1,7 +1,10 @@
 .sidebar {
-  font-family: "TT Lakes Medium";
+  font-family: "TT Lakes";
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+
   @media (max-width: 1365px) {
     display: none;
     z-index: 100;
@@ -92,7 +95,7 @@ header {
   -o-transition: all 0.3s  ease;
   transition: all 0.3s  ease;
 }
-.header__button-icon--closeburger {
+.button-icon--closeburger {
   background-image: url(../img/icon/closeburger.svg);
   
   @media (min-width: 1366px) {
@@ -128,7 +131,11 @@ header {
   display: table;
 }
 .menu__link {
+  font-family: "TT Lakes";
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
   font-weight: 500;
   display: block;
   line-height: 24px;
@@ -168,13 +175,13 @@ footer {
   margin-left: 24px;
   margin-bottom: 30px;
 }
-.footer__button-icon--call {
+.button-icon--call {
   background-image: url(../img/icon/call.svg);
 }
-.footer__button-icon--chat {
+.button-icon--chat {
   background-image: url(../img/icon/chat.svg);
 }
-.footer__button-icon--profile {
+.button-icon--profile {
   background-image: url(../img/icon/profile.svg);
 }
 .footer__mail {
