@@ -85,7 +85,7 @@ function closeModalFeedback() {
 
 const openSidebar = document.querySelector('.header__button-icon--burger')
 const modalSidebar = document.querySelector('.sidebar')
-const closeSidebar = document.querySelector('.button-icon--closeburger')
+const closeSidebar = document.querySelector('.burger-logo__burger')
 const fogSidebar = document.querySelector('.sidebar-fog')
 
 openSidebar.addEventListener('click', openModalSidebar);

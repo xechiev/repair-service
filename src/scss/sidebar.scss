@@ -3,7 +3,8 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21;
+  color: #1b1c21;
+  height: 100vh;
 
   @media (max-width: 1365px) {
     display: none;
@@ -13,26 +14,21 @@
     height: 100vh;
     left: 0;
     top: 0;
-    -webkit-box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
-            box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     background: #fff;
   }
   @media (min-width: 360px) {
     width: 360px;
   }
   @media (min-width: 1366px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     width: 320px;
     height: 100vh;
     position: fixed;
-    top: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    top: 0; 
     background: #fff;
+    height: 100%;
   }
 }
 
@@ -40,117 +36,90 @@
   display: block;
   z-index: 15;
 }
-header {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
-.header__menu--mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header-sidebar {
+  // flex: 0 0 auto;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  padding: 24px 16px;
   align-items: center;
-  padding-top: 10px;
-  @media (min-width: 768px) and (max-width: 1120px){
-    margin-right: 0;
-  }
-  @media (max-width: 360px) {
-    padding: 0px;
+  @media (min-width: 360px) {
+    padding: 24px 24px;
   }
 }
-.mobile-first {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.burger-logo {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
   align-items: center;
-  @media (min-width: 768px) and (max-width: 1120px){
-    margin: 0;
-  }
+
 }
+
 .button-icon {
   border: 0;
   padding: 0;
   background-color: inherit;
   width: 40px;
   height: 40px;
-  margin-right: 16px;
-}
-.button-icon {
-  @media (min-width: 768px) and (max-width: 1120px){
-   margin-right: 24px;
-  }
+  
 }
 .button-icon:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
-  -webkit-transition: all 0.3s  ease;
-  -o-transition: all 0.3s  ease;
-  transition: all 0.3s  ease;
+  transition: all 0.3s ease;
 }
-.button-icon--closeburger {
+.burger-logo__burger {
   background-image: url(../img/icon/closeburger.svg);
-  
+  margin-right: 17px;
+ 
   @media (min-width: 1366px) {
     display: none;
   }
 }
-.header__logo {
+.burger-logo__logo {
   background-image: url(../img/icon/logo.svg);
   width: 97px;
   height: 51px;
+  
 }
-.header__button-icon-search {
+.icon-search {
   background-image: url(../img/icon/search.svg);
 }
 .menu__navigation-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   text-decoration: none;
+  
 }
 .menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 0px 16px;
+  margin-bottom: 32px;
+
+  @media (min-width: 360px) {
+    padding: 0 24px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 24px;
+  }
 }
 .menu__item {
-  margin-bottom: 29px;
-  margin-left: 24px;
-  display: table;
+  // display: table;
+  margin-bottom: 24px;
 }
 .menu__link {
   font-family: "TT Lakes";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21;
+  color: #1b1c21;
   font-weight: 500;
   display: block;
   line-height: 24px;
   color: #1b1c21;
-  -webkit-transition-duration: 0.4s, 0.8s;
-       -o-transition-duration: 0.4s, 0.8s;
-          transition-duration: 0.4s, 0.8s;
-  
+
+  transition-duration: 0.4s, 0.8s;
 }
 .menu__link:hover {
-  -webkit-transform: scale(1.1, 1.2);
-      -ms-transform: scale(1.1, 1.2);
-          transform: scale(1.1, 1.2);
+  transform: scale(1.1, 1.2);
   color: #ff3e79;
- 
 }
 
 .menu__link--active {
@@ -160,29 +129,36 @@ header {
 .menu__link--active::before {
   content: "";
   width: 4px;
-  height: 30px;
+  height: 32px;
   background-image: url(../img/icon/highlight.svg);
   position: absolute;
   pointer-events: none;
-  margin-left: -24px;
-  -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translate(-16px, -5px);
+  @media (min-width: 360px) {
+    transform: translate(-24px, -5px);
+  }
 }
+
 footer {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-left: 24px;
-  margin-bottom: 30px;
+  flex-shrink: 0;
+  margin-left: 16px;
+
+  @media (min-width: 360px) {
+    margin-left: 24px;
+  }
 }
 .button-icon--call {
   background-image: url(../img/icon/call.svg);
+  margin-right: 16px;
 }
 .button-icon--chat {
   background-image: url(../img/icon/chat.svg);
+  margin-right: 16px;
 }
 .button-icon--profile {
   background-image: url(../img/icon/profile.svg);
+  margin-right: 16px;
 }
 .footer__mail {
   display: block;
@@ -202,11 +178,8 @@ footer {
   font-size: 24px;
 }
 .languages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .toggle-languages {
   border: none;
@@ -240,29 +213,23 @@ footer {
   pointer-events: all;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.95);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 @-webkit-keyframes Sidebar {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
 @keyframes Sidebar {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }

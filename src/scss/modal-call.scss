@@ -60,8 +60,8 @@
   @media screen and (min-width: 520px) {
     content: "";
     position: absolute;
-    top: 32px;
-    width: 4px;
+    top: 35px;
+    width: 3px;
     height: 40px;
     background: url(../img/icon/highlight.svg) no-repeat;
     transform: translateX(-32px);
@@ -74,7 +74,7 @@
     width: 4px;
     height: 40px;
     background: url(../img/icon/highlight.svg) no-repeat;
-    transform: translate(-214px, -8px);
+    transform: translate(-214px, -3px);
   }
 }
 .modal-call__title {
