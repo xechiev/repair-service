@@ -1,3 +1,4 @@
+
 .sidebar {
   font-family: "TT Lakes";
   font-size: 16px;
@@ -10,12 +11,13 @@
     display: none;
     z-index: 100;
     width: 320px;
-    position: relative;
+    position: fixed;
     height: 100vh;
     left: 0;
     top: 0;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     background: #fff;
+    flex-direction: column;
   }
   @media (min-width: 360px) {
     width: 360px;
