@@ -1079,7 +1079,10 @@ header {
       top: 0;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
       background: #fff;
-      flex-direction: column; } }
+      flex-direction: column;
+      overflow-y: scroll; }
+      .sidebar::-webkit-scrollbar {
+        width: 0; } }
   @media (min-width: 360px) {
     .sidebar {
       width: 360px; } }
