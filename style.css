@@ -661,7 +661,8 @@ header {
 .header__button-icon {
   border: 0;
   padding: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-right: 16px; }
 
 .header__brend {
   display: flex;
@@ -670,8 +671,7 @@ header {
 .header__button-icon--burger {
   background-image: url(./static/burger.svg);
   width: 40px;
-  height: 40px;
-  margin-right: 16.73px; }
+  height: 40px; }
   .header__button-icon--burger:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease; }
@@ -699,8 +699,7 @@ header {
 .header__button-icon--repair {
   background-image: url(./static/repair.svg);
   width: 40px;
-  height: 40px;
-  margin-right: 16px; }
+  height: 40px; }
   .header__button-icon--repair:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease; }
@@ -708,7 +707,8 @@ header {
 .header__button-icon--checkstatus {
   background-image: url(./static/checkstatus.svg);
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  margin-right: 0; }
   .header__button-icon--checkstatus:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease; }
@@ -913,8 +913,7 @@ header {
   .header__button-icon--chat {
     background-image: url(./static/chat.svg);
     width: 40px;
-    height: 40px;
-    margin-left: 16px; }
+    height: 40px; }
     .header__button-icon--chat:hover {
       transform: scale(1.1, 1.1);
       transition: all 0.3s ease; }
@@ -922,7 +921,6 @@ header {
     background-image: url(./static/profile.svg);
     width: 40px;
     height: 40px;
-    margin-left: 16px;
     margin-right: 40px; }
     .header__button-icon--profile:hover {
       transform: scale(1.1, 1.1);
