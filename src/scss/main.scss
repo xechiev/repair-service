@@ -23,6 +23,7 @@ header {
   border: 0;
   padding: 0;
   background-color: #fff;
+  margin-right: 16px;
 }
 .header__brend {
   display: -webkit-box;
@@ -34,7 +35,7 @@ header {
   background-image: url(../img/icon/burger.svg);
   width: 40px;
   height: 40px;
-  margin-right: 16.73px;
+  // margin-right: 16.73px;
   &:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease;
@@ -67,7 +68,7 @@ header {
   background-image: url(../img/icon/repair.svg);
   width: 40px;
   height: 40px;
-  margin-right: 16px;
+  // margin-right: 16px;
   &:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease;
@@ -77,6 +78,7 @@ header {
   background-image: url(../img/icon/checkstatus.svg);
   width: 40px;
   height: 40px;
+  margin-right: 0;
   &:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease;
@@ -311,7 +313,7 @@ header {
     background-image: url(../img/icon/chat.svg);
     width: 40px;
     height: 40px;
-    margin-left: 16px;
+    // margin-left: 16px;
     &:hover {
       transform: scale(1.1, 1.1);
       transition: all 0.3s ease;
@@ -321,7 +323,7 @@ header {
     background-image: url(../img/icon/profile.svg);
     width: 40px;
     height: 40px;
-    margin-left: 16px;
+    // margin-left: 16px;
     margin-right: 40px;
     &:hover {
       transform: scale(1.1, 1.1);
